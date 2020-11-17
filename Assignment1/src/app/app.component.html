@@ -1,0 +1,71 @@
+<div class="container">
+  <div class="col-xs-12" style="margin-top: 2vh;">
+    <p>Assignment 1: Creating Components.</p>
+    <button class="btn btn-primary" (click)="toggleDisplay()"> Show Assignment 1</button>
+  </div>
+</div>
+<ng-container *ngIf="showAssignment1">
+  <div class="container" id="assignmentOne">
+    <div class="row">
+      <div class="col-xs-12">
+        <ol>
+          <li>Create two new Components (manually or with CLI): WarningAlert and SuccessAlert</li>
+          <li>Output them beneath each other in the AppComponent</li>
+          <li>Output a warning or success message in the Components</li>
+          <li>Style the Components appropriately (maybe some red/ green text?)</li>
+        </ol>
+        <p>Use external or internal templates and styles!</p>
+        <p>Feel free to create more components, nest them into each other or play around with different types of
+          selectors!</p>
+      </div>
+      <hr>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <p>Here are the two components. I tried to mirror the old windows error message pop ups as well as success
+              message pop ups as well as a clickable ok button that would minimize the box and open it 5 seconds later.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 row" style="text-align: center;">
+        <div class="col-xs-6 col-sm-3" style="margin-bottom: 10px;">
+          <success-alert></success-alert>
+        </div>
+      </div>
+      <div class="col-sm-12 row">
+        <div class="col-xs-6 col-sm-3" style="margin-bottom: 10px;">
+          <warning-alert></warning-alert>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-container>
+<hr>
+<div class="container">
+  <div class="col-xs-12" style="margin-top: 2vh;">
+    <p>Assignment 2: Creating Components.</p>
+    <button class="btn btn-primary" (click)="toggleDisplay2()"> Show Assignment 2</button>
+  </div>
+</div>
+<ng-container *ngIf="showAssignment2">
+  <div class="container" id="assignmentOne">
+    <div class="row">
+      <div class="col-xs-12">
+        <ol>
+          <li>Add a Input field which updates a property ('username') via Two-Way-Binding</li>
+          <li>Output the username property via String Interpolation (in a paragraph below the input)</li>
+          <li>Add a button which may only be clicked if the username is NOT an empty string</li>
+          <li>Upon clicking the button, the username should be reset to an empty string</li>
+        </ol>
+      </div>
+    </div>
+    <hr>
+    <div class="col-sm-12 row" style="text-align: center;">
+      <div class="col-xs-6 col-sm-3" style="margin-bottom: 10px; text-align: center;">
+        <label>Here is my solution.</label>
+        <twoWay></twoWay>
+      </div>
+    </div>
+  </div>
+</ng-container>

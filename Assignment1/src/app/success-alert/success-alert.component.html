@@ -1,0 +1,14 @@
+<label>Input your name!</label>
+<input type="text" class="form-control" [(ngModel)]="userName">
+<div></div>
+<div class="roundbox boxshadow" style="width: 550px; border: solid 2px steelblue">              
+    <div class="gridheaderleft roundbox-top">S U C C S E S S !</div>
+    <div class="roundbox-bottom" style="height: 150px; min-width: 1vw; text-align:center; padding: 50px;">
+        Congratulations {{userName}}! You've completed the component creation assignment for the <b>UDEMY ANGUALR COURSE</b>!
+        <hr>
+        <p>Would you like to print a certificate of completion?</p>
+    </div>
+    <div style="padding: 25px; text-align: center;">
+        <button class="btn" >Yes</button><button class="btn">No</button>
+    </div>
+</div>

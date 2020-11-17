@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <label>Input your Username!</label>
+            <input type="text" placeholder="Insert Username Here" class="form-control" [(ngModel)]="userName">
+
+            <p *ngIf="userName != ''">Welcome {{userName}}! We're glad you decided to sign up with us. Here is a complementary button you
+                should click in order to reset you name. Currently it is {{userName}}.</p>
+            <button class="btn btn-primary" [disabled]="userName === ''" (click)='resetUserName()'>Reset UserName</button>
+            <button class="btn btn-primary" [disabled]="userName === ''" (click)="userName = ''">Reset UserName</button>
+            <p>the button on the right uses an expression on the (click) listener while the one on the left calls a resetUsername() function.</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+hr { display: block; margin-before: 0.5em; margin-after: 0.5em; margin-start: auto; margin-end: auto; overflow: hidden; border-style: inset; border-width: 1px;}
+
+
+.btn{
+    border-radius: 15px !important;
+    border-color: black !important; 
+    display:inline-block !important; 
+    margin: 10px !important;
+    
+}
